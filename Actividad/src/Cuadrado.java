@@ -3,7 +3,7 @@
 public class Cuadrado {
 
 	
-	public int lado = 177808 ;
+	public int lado ;
 	public double longitud;
 
 	public int area () {
@@ -17,6 +17,12 @@ public class Cuadrado {
 	}
 	public int camabiaLado (int lado) {
 		return this.lado = lado;
+	}
+	Cuadrado () {
+		this(177808);
+	}
+	Cuadrado(int lado) {
+		this.lado = lado;
 	}
 
 }

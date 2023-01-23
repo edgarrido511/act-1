@@ -1,7 +1,7 @@
 
 public class Circulo {
 	
-	double radio = 177808;
+	double radio;
 	double area;
 	double perimetro;
 
@@ -14,5 +14,10 @@ public class Circulo {
 	public double cambiaRadio(double radio) {
 		return this.radio = radio;
 	}
-	
+	Circulo(){
+		this(177808);
+	}
+	Circulo(double radio){
+		this.radio = radio;
+	}
 }
